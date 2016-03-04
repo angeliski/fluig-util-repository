@@ -1,0 +1,40 @@
+{
+	"homeFluig": "/home/rogerio/workspace/fluig/fluig/",
+	"productVersion": "1.5.7-INC-SNAPSHOT",
+	"dependencies" : [{
+			"src" : "dependencies/pom.xml",
+			"template" : "templates/dependencies_pom.txt",
+			"regex" : "<!-- #PLUGIN ADD POINT -->"  
+	},{
+			"src" : "fluig/server-components/pom.xml",
+			"template" : "templates/server_components_pom.txt",
+			"regex" : "<!-- #PLUGIN DEPENDENCY ADD POINT -->"  
+	},{
+			"src" : "fluig/server-components/pom.xml",
+			"template" : "templates/server_components_webmodule.txt",
+			"regex" : "<!-- #PLUGIN WEBMODULE ADD POINT -->"  
+	}],
+	"prefixes": {
+		"social": {
+			"name": "Fluig - Social ECM - Totlets - Widgets - ",
+			"artifactId": "social-ecm-totlets-widgets",
+			"src": "social-ecm/totlets/widgets/",
+			"category": "Social",
+			"product": "social_application"
+		},
+		"ecm": {
+			"name": "Fluig - ECM - Widget - ",
+			"artifactId": "ecm-widget",
+			"src": "ecm/widget/",
+			"category": "SYSTEM,ECM",
+			"product": "ECM"
+		},
+		"wcm": {
+			"name": "Fluig - WCM - Widget - ",
+			"artifactId": "wcm-widget",
+			"src": "wcm/widget/",
+			"category": "SYSTEM,WCM",
+			"product": "WCM"
+		}
+	}
+}

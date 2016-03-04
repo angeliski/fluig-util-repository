@@ -1,0 +1,7 @@
+						<webModule>
+							<groupId>com.fluig</groupId>
+							<artifactId>{{artifactId}}</artifactId>
+							<bundleFileName>{{artifactId}}.war</bundleFileName>
+							<contextRoot>/{{widgetCode}}</contextRoot>
+						</webModule>
+<!-- #PLUGIN WEBMODULE ADD POINT -->

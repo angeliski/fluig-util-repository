@@ -1,0 +1,2 @@
+		<module>{{widgetCode}}</module>
+<!-- #PLUGIN MODULE ADD POINT -->

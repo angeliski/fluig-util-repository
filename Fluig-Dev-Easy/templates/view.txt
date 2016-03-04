@@ -1,0 +1,7 @@
+<#attempt>
+<div class="wcm-widget-class super-widget fluig-style-guide" data-params="{{widgetInstance}}.instance({})" id="{{widgetId}}_${instanceId}">
+	<h1>{{widgetName}}</h1>
+</div>
+<#recover>
+	<p>Erro ao carregar widget</p>
+</#attempt>

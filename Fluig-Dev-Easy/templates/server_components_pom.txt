@@ -1,0 +1,7 @@
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>{{artifactId}}</artifactId>
+			<type>war</type>
+			<scope>compile</scope>
+		</dependency>
+<!-- #PLUGIN DEPENDENCY ADD POINT -->

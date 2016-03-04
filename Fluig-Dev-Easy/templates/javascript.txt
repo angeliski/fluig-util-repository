@@ -1,0 +1,16 @@
+var {{widgetInstance}} = SuperWidget.extend({
+
+	instanceId: null,
+
+	i18n: {},
+
+	bindings: {
+		local: {},
+		global: {}
+	},
+
+	init: function() {
+		
+	}
+	
+});

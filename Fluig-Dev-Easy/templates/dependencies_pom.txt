@@ -1,0 +1,8 @@
+		<dependency>
+			<groupId>com.fluig</groupId>
+			<artifactId>{{artifactId}}</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+			<scope>provided</scope>
+		</dependency>
+<!-- #PLUGIN ADD POINT -->
