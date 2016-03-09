@@ -9,6 +9,6 @@
     "nconf": "0.8.2",
     "prompt": "0.2.14",
     "properties-reader": "0.0.13",
-    "readline-sync": "^1.2.21",
+    "readline-sync": "^1.2.21"
   }
 }
