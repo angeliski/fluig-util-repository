@@ -1,0 +1,14 @@
+{
+  "name": "fluig-report",
+  "description": "fluig-report",
+  "version": "0.0.1",
+  "dependencies": {
+    "findit": "2.0.0",
+    "json2csv": "^3.2.0",
+    "minimist": "^1.2.0",
+    "nconf": "0.8.2",
+    "prompt": "0.2.14",
+    "properties-reader": "0.0.13",
+    "readline-sync": "^1.2.21",
+  }
+}
