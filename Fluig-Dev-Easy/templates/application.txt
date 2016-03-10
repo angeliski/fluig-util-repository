@@ -12,6 +12,5 @@ application.uiwidget=false
 developer.code=TOTVS
 developer.name=TOTVS S.A.
 developer.url=http\://www.totvs.com
-locale.file.base.name={{widgetName}}
 simple.deploy=true
 view.file=view.ftl
