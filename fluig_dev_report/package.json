@@ -1,0 +1,23 @@
+{
+  "name": "fluig_dev_report",
+  "description": "Generate one report with informations about the Widget's Product",
+  "version": "0.0.2",
+  "main": "index.js",
+   "bin": {
+      "fluig_dev_report": "index.js"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rogerio.angeliski",
+  "license": "MIT",
+  "dependencies": {
+    "findit": "2.0.0",
+    "json2csv": "^3.2.0",
+    "minimist": "^1.2.0",
+    "nconf": "0.8.2",
+    "prompt": "0.2.14",
+    "properties-reader": "0.0.13",
+    "readline-sync": "^1.2.21"
+  }
+}

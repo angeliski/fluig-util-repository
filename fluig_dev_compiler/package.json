@@ -1,0 +1,23 @@
+{
+  "name": "fluig_dev_compiler",
+  "description": "One compiler for widgets in the fluig",
+  "version": "0.0.2",
+  "main": "index.js",
+   "bin": {
+      "fluig_dev_compiler": "compiler.js"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rogerio.angeliski",
+  "license": "MIT",
+  "dependencies": {
+    "findit": "2.0.0",
+    "minimist": "^1.2.0",
+    "nconf": "0.8.2",
+    "prompt": "0.2.14",
+    "properties-reader": "0.0.13",
+    "readline-sync": "^1.2.21",
+    "xml2js": "^0.4.13"
+  }
+}
