@@ -11,10 +11,15 @@
   var handlebars   = require('handlebars');
   var inquirer     = require("inquirer");
   var replace      = require("replace");
-  var path 	       = require('path');
+  var path         = require('path');
   var config       = require('./config');
-
   
+
+  /********************************
+   * Global constants
+   ********************************/
+  var FLUIG_HOME = process.env.FLUIG_HOME;
+
 
   /********************************
    * Global variables
@@ -55,6 +60,11 @@
     jbossWebTemplate    = handlebars.compile(jbossWebSource);
     webTemplate         = handlebars.compile(webSource);
     pomTemplate         = handlebars.compile(pomSource);
+
+    if(!FLUIG_HOME) {
+      console.log('Defina a variável de ambiente "FLUIG_HOME" com o home do seu projeto. Ex. "export FLUIG_HOME=/home/user_name/Projetos/fluig/".');
+      return false;
+    }
 
     getUserOptions(function(){
       // gerenate widget options (name, code, description, etc)
@@ -246,7 +256,7 @@
       }]
     }];
 
-    widgetSrc = config.homeFluig + config.prefixes[moduleName].src;
+    widgetSrc = FLUIG_HOME + config.prefixes[moduleName].src;
 
     // cria a estrutura da widget no local correto.
     createStructure(structure, widgetSrc);
@@ -268,7 +278,7 @@
         widgetCode       : options.widgetCode,
       });
       
-      var pathWidget = config.homeFluig + dependency.src;
+      var pathWidget = FLUIG_HOME + dependency.src;
 
       replace({
         regex: dependency.regex,
@@ -279,7 +289,7 @@
       });
     };
 
-    var widgetParent = config.homeFluig + config.prefixes[moduleName].src + "pom.xml"; 
+    var widgetParent = FLUIG_HOME + config.prefixes[moduleName].src + "pom.xml"; 
     var pomTemplate  = handlebars.compile(fs.readFileSync(path.join(__dirname,"templates/module_parent.txt"), 'utf8'));
     var pomContent   = pomTemplate({
       artifactId : options.artifactId,
