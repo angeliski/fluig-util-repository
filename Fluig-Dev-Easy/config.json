@@ -1,5 +1,4 @@
 {
-	"homeFluig": "/home/rogerio/workspace/fluig/fluig/",
 	"productVersion": "1.5.7-INC-SNAPSHOT",
 	"dependencies" : [{
 			"src" : "dependencies/pom.xml",
