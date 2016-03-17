@@ -1,12 +1,14 @@
+#!/usr/bin/env node
+'use strict';
 var util = require('./util/utils');
 var finder = require('./util/finder.js');
 
 function init() {
     util.createConfiguration(function() {
         var widgetName = process.argv[2] || '';
-        var arguments = require('minimist')(process.argv.slice(2));
+        var inputParameters = require('minimist')(process.argv.slice(2));
 
-        if(arguments.last){
+        if(inputParameters.last){
             util.compileAndPublishLastWidget();    
         }else{
             console.info("Procurando por widgets que contém '" + widgetName + "' no nome.");

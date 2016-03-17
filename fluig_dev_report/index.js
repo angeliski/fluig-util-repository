@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+'use strict';
 var util = require('./util/utils');
 var finder = require('./util/finder.js');
 
